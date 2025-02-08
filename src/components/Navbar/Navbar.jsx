@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div className="min-h-20 bg-blue-950 text-white flex justify-between items-center">
-            <div>
+            <div className="ml-4">
                 <img className="w-15 h-15" src={logo} alt="" />
             </div>
             <div>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div>
-                <button className="btn btn-neutral">Login</button>
+                <button className="btn btn-neutral mr-4">Login</button>
             </div>
         </div>
     );

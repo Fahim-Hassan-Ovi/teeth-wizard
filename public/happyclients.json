@@ -1,0 +1,51 @@
+[
+    {
+      "reviewId": 1,
+      "name": "Emily Johnson",
+      "userImg": "https://randomuser.me/api/portraits/women/1.jpg",
+      "review": "Dr. Smith and his team were amazing! They made me feel comfortable, and my teeth have never looked better."
+    },
+    {
+      "reviewId": 2,
+      "name": "Michael Brown",
+      "userImg": "https://randomuser.me/api/portraits/men/2.jpg",
+      "review": "Fantastic experience! The staff was friendly, and the treatment was painless. Highly recommend Teeth Wizard!"
+    },
+    {
+      "reviewId": 3,
+      "name": "Sophia Davis",
+      "userImg": "https://randomuser.me/api/portraits/women/3.jpg",
+      "review": "I had a great visit! The doctor explained everything clearly, and the results were excellent."
+    },
+    {
+      "reviewId": 4,
+      "name": "James Wilson",
+      "userImg": "https://randomuser.me/api/portraits/men/4.jpg",
+      "review": "The best dental experience I've ever had. Professional, clean, and very attentive to detail."
+    },
+    {
+      "reviewId": 5,
+      "name": "Olivia Martinez",
+      "userImg": "https://randomuser.me/api/portraits/women/5.jpg",
+      "review": "The service was top-notch, and the dentist was very caring. Will definitely come back!"
+    },
+    {
+      "reviewId": 6,
+      "name": "William Anderson",
+      "userImg": "https://randomuser.me/api/portraits/men/6.jpg",
+      "review": "I was nervous at first, but the team made me feel at ease. My teeth cleaning was thorough and pain-free."
+    },
+    {
+      "reviewId": 7,
+      "name": "Isabella Thomas",
+      "userImg": "https://randomuser.me/api/portraits/women/7.jpg",
+      "review": "Highly professional service. They really care about their patients' comfort and dental health."
+    },
+    {
+      "reviewId": 8,
+      "name": "Benjamin Harris",
+      "userImg": "https://randomuser.me/api/portraits/men/8.jpg",
+      "review": "Great atmosphere and friendly staff. The dentist explained everything and gave me great advice on oral care."
+    }
+  ]
+  
