@@ -1,11 +1,27 @@
 
+import { useContext } from 'react';
 import { FaPhone, FaRegAddressCard } from 'react-icons/fa';
 import { SlCalender } from 'react-icons/sl';
+import { authContext } from '../../AuthProvider/AuthProvider';
 
-const Modal = () => {
+const Modal = ({treatment}) => {
+    const {user} = useContext(authContext);
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(e);
+        const fname = e.target.Fname.value;
+        const lname = e.target.Lname.value;
+        const email = e.target.email.value;
+        const info = {
+            fname, lname,email, treatment
+        }
+        let saveData = [];
+        const localData = localStorage.getItem("appointment");
+        if(localData){
+            saveData = JSON.parse(localData);
+        }
+        saveData.push(info);
+        localStorage.setItem("appointment", JSON.stringify(saveData));
 
     }
     return (
@@ -47,7 +63,7 @@ const Modal = () => {
                                 <path
                                     d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                             </svg>
-                            <input type="text" className="grow" name='email' placeholder="Email" />
+                            <input type="text" className="grow" name='email' value={user?.email} placeholder="Email" />
                         </label>
 
                         <label className="input input-bordered flex items-center gap-2">

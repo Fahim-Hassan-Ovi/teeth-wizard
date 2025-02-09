@@ -20,7 +20,7 @@ const Details = () => {
                     </p>
                     <button onClick={() => document.getElementById('my_modal_5').showModal()} className="btn btn-primary">Book Appointment</button>
                 </div>
-                <Modal />
+                <Modal treatment={treatment} />
             </div>
         </div>
     );
