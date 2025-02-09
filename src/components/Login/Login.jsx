@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
 import { authContext } from "../../AuthProvider/AuthProvider";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const {handleGoogleLogin, handleLogin, handleLogout} = useContext(authContext);
     const [error, setError] = useState("");
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,11 +14,19 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
         handleLogin(email, password)
-        .then(res=>{})
+        .then(res=>{
+            navigate(location.state.from);
+        })
         .catch(err=>{
             setError(err.message);
         })
         
+    }
+    const googleLoginHandler = () =>{
+        handleGoogleLogin()
+        .then(res=>{
+            navigate(location.state.from);
+        })
     }
     return (
         <div className="min-h-screen flex justify-center items-center">
@@ -55,9 +65,9 @@ const Login = () => {
                 {
                     error && <p className="text-red-500 text-xs font-semibold text-center mb-4">{error.split("/")[1].slice(0,18)}</p>
                 }
-                <button onClick={handleGoogleLogin} className="btn w-1/2 block mx-auto text-center font-semibold mb-4">Google Login</button>
+                <button onClick={googleLoginHandler} className="btn w-1/2 block mx-auto text-center font-semibold mb-4">Google Login</button>
                 <p className="text-center font-semibold">Dont’t Have An Account ? <Link className="text-red-500" to="/register">Register</Link></p>
-                <button onClick={handleLogout}>Log-out</button>
+                <button onClick={handleLogout} className="btn w-1/2 block mx-auto">Log-out</button>
             </div>
         </div>
     );

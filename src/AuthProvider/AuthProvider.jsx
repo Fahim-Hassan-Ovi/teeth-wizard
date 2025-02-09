@@ -8,6 +8,7 @@ const AuthProvider = ({ routes }) => {
     const googleProvider = new GoogleAuthProvider();
 
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const handleRegister = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
@@ -35,6 +36,7 @@ const AuthProvider = ({ routes }) => {
         handleLogout,
         user,
         setUser,
+        loading
     }
 
     useEffect(() => {
@@ -46,6 +48,7 @@ const AuthProvider = ({ routes }) => {
             else{
                 setUser(null);
             }
+            setLoading(false)
 
             return () => {
                 unsubscribe();
