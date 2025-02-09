@@ -5,7 +5,7 @@ import FeedBack from "../FeedBack/FeedBack";
 
 const Home = () => {
     const services = useLoaderData();
-    console.log(services);
+    // console.log(services);
     const {servicesData, feedBackData} = services;
     return (
         <div className="w-[80%] max-w-[1200px]  mx-auto mt-10">

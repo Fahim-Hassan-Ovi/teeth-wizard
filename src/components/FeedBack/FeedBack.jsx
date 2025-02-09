@@ -1,6 +1,6 @@
 
 const FeedBack = ({ feedBackData }) => {
-    console.log(feedBackData);
+    // console.log(feedBackData);
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             {
@@ -22,7 +22,7 @@ const FeedBack = ({ feedBackData }) => {
                                     <input type="radio" name="rating-1" className="mask mask-star" />
                                     <input type="radio" name="rating-1" className="mask mask-star" />
                                 </div>
-                                <button className="btn btn-primary">Buy Now</button>
+                                <button className="btn btn-primary">See Details</button>
                             </div>
                         </div>
                     </div>
