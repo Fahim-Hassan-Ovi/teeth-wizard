@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 
 const Register = () => {
-    const { handleRegister } = useContext(authContext);
+    const { handleRegister, manageProfile } = useContext(authContext);
     const [error, setError] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -29,8 +29,11 @@ const Register = () => {
             setError("Password must contain at least one uppercase letter");
             return
         }
-        console.log(name, photo, email, password);
-        handleRegister(email, password, conPassword);
+        console.log(name, photo, email, password , conPassword);
+        handleRegister(email, password)
+        .then(res =>{
+            manageProfile(name,photo);
+        })
     }
     return (
         <div className="min-h-screen flex justify-center items-center">
