@@ -1,7 +1,7 @@
 import banner from "../../assets/banner.avif"
 const Banner = () => {
     return (
-        <div className="hero bg-base-200 w-[80%] max-w-[1000px]  mx-auto rounded-xl mt-10">
+        <div className="hero bg-base-200 w-[80%] max-w-[1200px]  mx-auto rounded-xl mt-10">
             <div className="hero-content flex-col lg:flex-row-reverse text-black">
                 <img
                     src={banner}

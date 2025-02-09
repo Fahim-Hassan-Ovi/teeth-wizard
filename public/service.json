@@ -2,49 +2,57 @@
     {
       "id": 1,
       "treatment": "Teeth Whitening",
-      "image": "https://images.pexels.com/photos/3762402/pexels-photo-3762402.jpeg",
-      "description": "Brighten your smile with professional teeth whitening treatments that remove stains and discoloration."
+      "image": "https://i.ibb.co.com/jZB5fzRB/service1.webp",
+      "description": "Brighten your smile with professional teeth whitening treatments that remove stains and discoloration.",
+      "cost": "150"
     },
     {
       "id": 2,
       "treatment": "Dental Cleaning",
-      "image": "https://images.pexels.com/photos/6627419/pexels-photo-6627419.jpeg",
-      "description": "Routine dental cleanings help prevent cavities, gum disease, and keep your teeth healthy."
+      "image": "https://i.ibb.co.com/v6tCfwxD/service2.jpg",
+      "description": "Routine dental cleanings help prevent cavities, gum disease, and keep your teeth healthy.",
+      "cost": "100"
     },
     {
       "id": 3,
       "treatment": "Dental Implants",
-      "image": "https://images.pexels.com/photos/6812534/pexels-photo-6812534.jpeg",
-      "description": "Replace missing teeth with durable and natural-looking dental implants for a confident smile."
+      "image": "https://i.ibb.co.com/yFspsfMw/service3.jpg",
+      "description": "Replace missing teeth with durable and natural-looking dental implants for a confident smile.",
+      "cost": "300"
     },
     {
       "id": 4,
       "treatment": "Braces & Invisalign",
-      "image": "https://images.pexels.com/photos/6812535/pexels-photo-6812535.jpeg",
-      "description": "Straighten your teeth with traditional braces or clear aligners like Invisalign for a perfect smile."
+      "image": "https://i.ibb.co.com/1YcV4jyG/service4.jpg",
+      "description": "Straighten your teeth with traditional braces or clear aligners like Invisalign for a perfect smile.",
+      "cost": "500"
     },
     {
       "id": 5,
       "treatment": "Root Canal Treatment",
-      "image": "https://images.pexels.com/photos/6627435/pexels-photo-6627435.jpeg",
-      "description": "Save infected teeth with painless root canal therapy and avoid extractions."
+      "image": "https://i.ibb.co.com/tPhMNKJT/service5.webp",
+      "description": "Save infected teeth with painless root canal therapy and avoid extractions.",
+      "cost": "250"
     },
     {
       "id": 6,
       "treatment": "Tooth Extraction",
-      "image": "https://images.pexels.com/photos/6627426/pexels-photo-6627426.jpeg",
-      "description": "Safe and painless tooth extractions for damaged or impacted teeth."
+      "image": "https://i.ibb.co.com/7xZsMjBr/service6.jpg",
+      "description": "Safe and painless tooth extractions for damaged or impacted teeth.",
+      "cost": "150"
     },
     {
       "id": 7,
       "treatment": "Dental Crowns",
-      "image": "https://images.pexels.com/photos/6812536/pexels-photo-6812536.jpeg",
-      "description": "Protect and restore damaged teeth with durable and natural-looking dental crowns."
+      "image": "https://i.ibb.co.com/xSqDrffT/service7.jpg",
+      "description": "Protect and restore damaged teeth with durable and natural-looking dental crowns.",
+      "cost": "400"
     },
     {
       "id": 8,
       "treatment": "Gum Disease Treatment",
-      "image": "https://images.pexels.com/photos/6627428/pexels-photo-6627428.jpeg",
-      "description": "Prevent and treat gum disease with advanced periodontal care."
+      "image": "https://i.ibb.co.com/vCyzsrhf/service8.webp",
+      "description": "Prevent and treat gum disease with advanced periodontal care.",
+      "cost": "200"
     }
   ]
